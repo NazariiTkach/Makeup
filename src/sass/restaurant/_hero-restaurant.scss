@@ -1,0 +1,63 @@
+.restaurant-hero__overlay {
+	max-width: 414px;
+	margin: 0 auto;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url('../images/hero-images/restaurant-hero-mobile.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url('../images/hero-images/restaurant-hero-mobile@2x.jpg');
+	}
+	@media screen and (min-width: 1024px) {
+		max-width: 1024px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url('../images/hero-images/restaurant-hero-tablet.jpg');
+
+		@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+			url('../images/hero-images/restaurant-hero-tablet@2x.jpg');
+		}
+	}
+	@media screen and (min-width: 1280px) {
+		max-width: 1280px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url('../images/hero-images/restaurant-hero-desktop.jpg');
+
+		@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+			url('../images/hero-images/restaurant-hero-desktop@2x.jpg');
+		}
+	}
+}
+
+.restaurant-hero__title {
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 1024px) {
+		margin-bottom: 16px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		margin-bottom: 32px;
+	}
+}
+.restaurant-hero__subtitle {
+	margin-bottom: 44px;
+
+	@media screen and (min-width: 1024px) {
+		margin-bottom: 56px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		margin-bottom: 64px;
+	}
+}

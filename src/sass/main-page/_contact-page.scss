@@ -1,0 +1,246 @@
+.section-contact {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  // background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+    // margin: 0 auto;
+  background: $primary-background-color;
+  background-image: $liner-gradient-contact-mobail, $liner-gradient-main-mobile;
+
+  // @media screen and (min-width: 1024px) {
+  //   max-width: 1024px;
+  //   background-image: $liner-gradient-main-tablet;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   max-width: 1280px;
+  // }
+
+  @media (min-width: 1024px) {
+    padding-top: 56px;
+    padding-bottom: 51px;
+      background-image: $liner-gradient-main-tablet;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 56px;
+    padding-bottom: 80px;
+    background-image: $liner-gradient-main-desktop;
+  }
+}
+
+.contacts-list__iteam {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  @media screen and (max-width: 413px){
+    display: inline-block;
+  }
+
+  @media (min-width: 1024px) {
+    display: table;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+
+    &:last-child {
+      margin-top: 57px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    &:last-child {
+      margin-top: 48px;
+    }
+  }
+}
+
+.main-title {
+  margin-bottom: 12px;
+
+  color: $logo-black-color;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-family: Film P3, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.075;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 8px;
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $third-text-color;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 52px;
+  }
+}
+
+.thumb--position {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts-list__restorant {
+  padding-right: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $brown-color;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-list__hotel {
+  padding-right: 54px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $brown-color;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts__thumb {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px 11px 8px;
+  background-color: $white-text-color;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+
+.contacts__thumb__tel {
+  display: flex;
+  gap: 12px;
+
+  @media (min-width: 1024px) {
+    gap: 16px;
+  }
+}
+
+.contacts__thumb__location {
+  width: 260px;
+  margin-left: auto;
+  padding: 8px 33px 7px 10px;
+  @media screen and (max-width: 413px){
+    width: auto;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: auto;
+    width: 285px;
+    padding: 9px 8px 7px 10px;
+  }
+}
+
+.contacts__number {
+  display: flex;
+  align-items: center;
+
+  padding: 12px 8px 11px 14px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $logo-black-color;
+}
+
+.contacts__tel {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $logo-black-color;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: $logo-black-color;
+}
+
+.contacts__icon__tel {
+  margin-right: 8px;
+  fill: $fill-yellow-icons;
+}
+
+.contacts__icon__map {
+  width: 3em;
+  margin-right: 10px;
+  fill: $fill-yellow-icons;
+}
+
+.thumb__map {
+  width: 384px;
+  height: 220px;
+  margin-top: 32px;
+  @media screen and (max-width: 413px){
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 535px;
+    height: 412px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1280px) {
+    width: 634px;
+  }
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

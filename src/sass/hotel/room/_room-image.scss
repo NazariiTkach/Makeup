@@ -1,0 +1,45 @@
+.room-image {
+    display: flex;
+    justify-content: end;
+    
+    &__base {
+        box-shadow: 2px 2px 60px 2px #00000040;
+
+        @media screen and (min-width:1024px) {
+                display: flex;
+                position: absolute;
+                top: -94px;
+                right: 47px;
+            }
+
+        @media screen and (min-width:1280px) {
+                top: -104px;
+                right: 95px;
+                }
+    }
+
+    &__base--three {
+        margin-left: 0px;
+    }
+
+    &__swipe {
+        margin-bottom: 27.59px;
+        margin-left: auto;
+        margin-right: 0px;
+        box-shadow: 2px 2px 60px 2px #00000040;
+
+        @media screen and (min-width:1024px) {
+            display: inline-block;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+    }
+
+        &__swipe--none {
+            display: none;
+
+            @media screen and (min-width:1024px) {
+                display: inline-block;
+            }
+        }
+}

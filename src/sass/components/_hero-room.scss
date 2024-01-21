@@ -1,0 +1,240 @@
+.room-hero__container {
+	position: relative;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 414px) {
+		width: 414px;
+		height: 740px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 1024px;
+		height: 720px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		width: 1280px;
+		height: 720px;
+
+	}
+}
+
+.room-hero__title {
+	margin-bottom: 14px;
+	font-family: 'Times New Roman', serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.14;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-align: left;
+	color: $white-text-color;
+
+	@include tablet {
+		width: 510px;
+		font-size: 36px;
+		margin-bottom: 24px;
+	}
+}
+
+.room-hero__title-small {
+	text-transform: lowercase;
+}
+
+.room-hero__text {
+	min-height: 74px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: $white-text-color;
+
+	@include tablet {
+		font-size: 16px;
+		width: 400px;
+		min-height: 83px;
+
+	}
+}
+
+.room-hero__text-wrap {
+	max-width: 325px;
+	position: absolute;
+	bottom: 16%;
+	left: 5%;
+	z-index: 10;
+
+
+	@include tablet {
+		width: 510px;
+		position: absolute;
+		bottom: 104px;
+		left: 47px;
+	}
+
+	@include desktop {
+		position: absolute;
+		bottom: 48px;
+		left: 85px;
+	}
+}
+
+.room-hero__link {
+	font-size: 16px;
+	width: 285px;
+	padding: 8px 8px 8px 8px;
+
+	@media screen and (max-width: 1023px) {
+		position: absolute;
+		top: 64px;
+		right: 15px;
+		z-index: 10;
+	}
+
+	@include tablet {
+
+		position: absolute;
+		top: 630px;
+		left: 47px;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.room-hero__socials {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	z-index: 10;
+
+	@include tablet {
+		display: flex;
+		position: absolute;
+		bottom: 38px;
+		left: 40%;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.room-hero__socials-item:not(:last-child) {
+	margin-bottom: 8px;
+
+	@include tablet {
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+}
+
+.room-hero__btn {
+	position: absolute;
+	bottom: 40px;
+	right: 58px;
+	z-index: 10;
+	max-width: 236px;
+	padding: 14px 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	color: $yellow-accent-color;
+	background-color: $homepage-background-button-color;
+	transition: background-color 250ms $timing-function;
+
+	&:hover,
+	&:focus {
+		background-color: $hover-white-background-button-color;
+	}
+
+	@include tablet {
+		position: absolute;
+		bottom: 64px;
+		right: 47px;
+		z-index: 10;
+	}
+
+	@include desktop {
+		position: absolute;
+		bottom: 66px;
+		right: 85px;
+	}
+
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+
+
+}
+
+.room-hero__swiper-slide {
+	background: #fff;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	content: none;
+}
+
+.room-hero__slider-button {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.65);
+	color: $yellow-accent-color;
+
+	// &:hover,
+	// &:focus{
+	// 	color: $white-text-color;
+	// }
+}
+
+.swiper-button-prev {
+	top: 50%;
+	left: 15px;
+
+	@media screen and (min-width: 1024px) {
+		left: 47px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		left: 85px;
+	}
+
+}
+
+.swiper-button-next {
+	top: 50%;
+	right: 15px;
+
+	@media screen and (min-width: 1024px) {
+		right: 47px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		right: 85px;
+	}
+}
+
+.room-hero__icon-btn {
+	fill: currentColor;
+}

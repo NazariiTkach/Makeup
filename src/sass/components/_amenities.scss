@@ -1,0 +1,196 @@
+.amenities-section {
+  padding: 32px 0;
+  background-color: $primary-background-color;
+
+  @include desktop {
+    background-image: $liner-gradient-amenities-desktop;
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include tablet {
+    }
+  }
+
+  &__title {
+    font-family: Times New Roman, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+  }
+
+  &__first-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 80px;
+    }
+
+    @include desktop {
+      gap: 159px;
+    }
+  }
+
+  &__second-text-wrapper {
+    @media (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    @include desktop {
+      gap: 64px;
+    }
+  }
+
+  &__text--first-size {
+    margin-bottom: 32px;
+    @include tablet {
+      width: 757px;
+    }
+  }
+
+  &__text--second-size {
+    @include tablet {
+      width: 400px;
+    }
+  }
+
+  &__text--third-size {
+    @include tablet {
+      width: 450px;
+    }
+
+    @include desktop {
+      width: 495px;
+    }
+  }
+
+  &__subtitle {
+    font-family: Times New Roman, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $room-page-background-button-color;
+    color: $white-text-color;
+    border: 1px solid $border-yellow-button-color;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    transition: color 250ms $timing-function,
+      background-color 250ms $timing-function;
+
+    @include tablet {
+      width: 434px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-left: 37px;
+      padding-right: 37px;
+      margin-left: auto;
+      margin-bottom: 32px;
+      margin-top: 40px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    @include desktop {
+      margin-right: 113px;
+    }
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: $hover-yellow-background-button-color;
+    color: $room-page-background-button-color;
+  }
+
+  &__link {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+
+    @include tablet {
+      justify-content: flex-end;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    @include desktop {
+      margin-right: 115px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $hover-yellow-background-button-color;
+    fill: $hover-yellow-background-button-color;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
